@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ejemplo</title>
+    <style>
+    .column {
+      float: left;
+      width: 32.4%;
+      padding: 5px;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .container {
+      position: relative;
+    }
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #000000;
+    }
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <div class="row">
+  	<img src="n1.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="remerosa.jpg" alt="Snow" style="width:100%">
+          <div class="overlay">
+            <div class="text"> TOP BABE // $300</div>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="remelarga.jpg" alt="Forest" style="width:100%">
+          <div class="overlay">
+            <div class="text"> CAMISETA TOKYO // $500</div>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="remerallas.jpg" alt="Mountains" style="width:100%">
+          <div class="overlay">
+            <div class="text"> REME RALLITAS // $300</div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <img src="n2.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="panrosa.jpg" alt="Snow" style="width:100%">
+          <div class="overlay">
+            <div class="text"> PANT DANCE // $700</div>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="pannegro.jpg" alt="Forest" style="width:100%">
+          <div class="overlay">
+            <div class="text"> PANT OFFICE // $1000</div>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="pangris.jpg" alt="Mountains" style="width:100%">
+          <div class="overlay">
+            <div class="text"> PANT WALES // $900</div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <img src="n3.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="polleralla.jpg" alt="Snow" style="width:100%">
+          <div class="overlay">
+            <div class="text"> POLLERA CHERRY // $300</div>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="shortnegro.jpg" alt="Forest" style="width:100%">
+          <div class="overlay">
+            <div class="text"> SHORT OWEN // $500</div>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="shortralla.jpg" alt="Mountains" style="width:100%">
+          <div class="overlay">
+            <div class="text"> SHORT EIGHTYS // $400</div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <img src="n4.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="buzonegro.jpg" alt="Snow" style="width:100%">
+          <div class="overlay">
+            <div class="text">BUZO FLEX // $400</div>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="buzorainbow.jpg" alt="Forest" style="width:100%">
+          <div class="overlay">
+            <div class="text">BUZO RAINBOW // $500</div>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="buzoblanco.jpg" alt="Mountains" style="width:100%">
+          <div class="overlay">
+            <div class="text">BUZO ESKELETON // $500</div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

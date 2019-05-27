@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Nuevo</title> 
+<style type="text/css">
+* { margin: auto; padding: 0; text-align: center }
+#cabecera { font: bold 1.3em verdana; background-color: #feffe4;  }
+h1 { text-align: center ; padding: 0.5em }
+#menu { float: left; width: 30%; background-color: #000000; }
+#menu img { width: 35%; margin: 5%; cursor: pointer; }
+#principal { float: left; width: 70%; }
+#visor { width: 70%; margin: 1% }
+#visor img { width: 100% }
+</style>
+<script type="text/javascript">
+window.onload = function() { //tras cargar la página ...
+visor1=document.getElementById("visor"); //referencia al visor
+mititulo=document.getElementById("titulo"); //referencia al pie de foto
+}
+function mifoto(num) { //cambiar la imagen
+         f="arg"+num+".jpg"; //ruta de la nueva imagen
+         document.images["fotoVisor"].src=f; //cambiar imagen
+         t=document.images["fotos"+num].alt; //texto de pie de foto
+         mititulo.innerHTML=t; //cambiar pie de foto
+         }
+</script>
+</head>
+<body>
+<div id="cabecera">
+<h1></h1>
+</div>
+<div id="menu">
+<img src='polene.jpg' alt='jejej' name='fotos1' onclick="mifoto(1)"/>
+<img src='vestrj.jpg' alt='' name='fotos2' onclick="mifoto(2)"/>
+<img src='arg3.jpg' alt='' name='fotos3' onclick="mifoto(3)"/>
+<img src='arg4.jpg' alt='' name='fotos4' onclick="mifoto(4)"/>
+<img src='arg5.jpg' alt='' name='fotos5' onclick="mifoto(5)"/>
+<img src='arg6.jpg' alt='' name='fotos6' onclick="mifoto(6)"/>
+</div>
+<div id="principal">
+<div id="visor">
+   <img src='arg1.jpg' alt='1. India - Agra - El Taj Majal.' name='fotoVisor'/>
+   <div id="titulo"></div>
+   </div>
+</div>
+</body>
+</html>
